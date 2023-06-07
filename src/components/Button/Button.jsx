@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { ButtonStyled } from './Button.styled';
-import { ListItemStyled } from './Common.styled';
+import { ListItemStyled } from '../Common.styled';
 const Button = ({ name, onLeaveFeedback }) => {
   return (
     <ListItemStyled>
