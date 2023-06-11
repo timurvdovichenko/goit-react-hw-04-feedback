@@ -13,13 +13,13 @@ const App = () => {
 
   const onClickChange = name => {
     if (name === 'good') {
-      setFeedbackGood(feedbackGood + 1);
+      setFeedbackGood(prevState => prevState + 1);
     }
     if (name === 'neutral') {
-      setFeedbackNeutral(feedbackNeutral + 1);
+      setFeedbackNeutral(prevState => prevState + 1);
     }
     if (name === 'bad') {
-      setFeedbackBad(feedbackBad + 1);
+      setFeedbackBad(prevState => prevState + 1);
     }
   };
 
